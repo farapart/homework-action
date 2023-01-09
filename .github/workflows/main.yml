@@ -4,6 +4,9 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
+      - name: install dependices
+        run: pip install pytest
+             pip install coverage
       - uses: actions/checkout@v2
       - name: Run unitest
         run: python3 shopping_basket.py
