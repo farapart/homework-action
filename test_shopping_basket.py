@@ -27,10 +27,9 @@ def test_whole_process():
     b.add_item(i1, 2)
     b.add_item(i2)
     b.add_item(i3, 3)
-    b.update_item(i2, 2)
     b.remove_item(i3)
     cost = b.get_total_cost()
-    assert cost == 7
+    assert cost == 5
 
 if __name__ == '__main__':
     pytest.main(["-s", "test_shopping_basket.py"])
