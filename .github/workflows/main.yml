@@ -6,5 +6,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run unitest
-        run: python3 homework-action/shopping_basket.py
+        run: python3 shopping_basket.py
   
